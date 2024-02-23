@@ -53,7 +53,7 @@
 
 .missionContainer p {
   font-size: 2.5vh;
-  font-family: "Schibsted Grotesk", sans-serif;
+  font-family: 'Schibsted Grotesk', sans-serif;
 }
 
 .missionContainer span {
@@ -76,7 +76,7 @@
 }
 
 .linksContainer a {
-  font-family: "Schibsted Grotesk", sans-serif;
+  font-family: 'Schibsted Grotesk', sans-serif;
   font-size: 4vh;
   font-weight: 500;
   color: blue;
@@ -95,6 +95,10 @@
 
 .linksContainer a:visited:hover {
   color: black;
+}
+
+.socialLogo svg {
+  font-size: 7vh;
 }
 
 @media screen and (max-width: 1400px) and (orientation: portrait) {
@@ -130,15 +134,25 @@
   }
 
   .missionContainer p {
-    font-size: 3vh;
+    font-size: 3.5vh;
   }
 
   .linksContainer a {
-    font-size: 3vh;
+    font-size: 4vh;
   }
 
   .logo {
     max-width: 30vw;
     max-height: 30vh;
+  }
+
+  .socialLogo svg {
+    font-size: 10vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .landingPage {
+    row-gap: 12vh;
   }
 }

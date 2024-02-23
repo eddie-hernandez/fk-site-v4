@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
 import fklogo from './assets/FULLKITLOGO.png'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
 
 export default function App() {
   return (
@@ -23,7 +25,10 @@ export default function App() {
             rel="noreferrer"
             target="_blank"
           >
-            EMAIL
+            <div className="socialLogo">
+              <MailOutlineIcon />
+            </div>
+            {/* EMAIL */}
           </a>
           <a
             className="socialLink"
@@ -31,7 +36,10 @@ export default function App() {
             rel="noreferrer"
             target="_blank"
           >
-            INSTAGRAM
+            <div className='socialLogo'>
+              <InstagramIcon />
+            </div>
+            {/* INSTAGRAM */}
           </a>
         </div>
       </div>

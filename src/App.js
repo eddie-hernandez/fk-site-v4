@@ -8,15 +8,15 @@ export default function App() {
   return (
     <div className="app">
       <div className="landingPage">
+        <div className="logoContainer">
+          <img src={fklogo} className="logo" alt="full kit logo" />
+        </div>
         <div className="missionContainer">
           <p>
             U.S.-based collective based in NYC/LA/TX. We offer{' '}
             <span>CUSTOM MERCHANDISE</span>, <span>CREATIVE DIRECTION</span>,
             and <span>MUSIC SUPERVISION</span>.
           </p>
-        </div>
-        <div className="logoContainer">
-          <img src={fklogo} className="logo" alt="full kit logo" />
         </div>
         <div className="linksContainer">
           <a
@@ -36,7 +36,7 @@ export default function App() {
             rel="noreferrer"
             target="_blank"
           >
-            <div className='socialLogo'>
+            <div className="socialLogo">
               <InstagramIcon />
             </div>
             {/* INSTAGRAM */}

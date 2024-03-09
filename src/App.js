@@ -1,23 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import fklogo from './assets/FULLKITLOGO.png'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import Services from './components/services/Services'
 
 export default function App() {
+  const [invertLogo, setInvertLogo] = useState(null)
+
   return (
     <div className="app">
       <div className="landingPage">
         <div className="logoContainer">
-          <img src={fklogo} className="logo" alt="full kit logo" />
+          <img src={fklogo} className={`logo ${invertLogo ? 'show' : ''}`} alt="full kit logo" />
         </div>
-        <div className="missionContainer">
-          <p>
-            U.S.-based collective based in NYC/LA/TX. We offer{' '}
-            <span>CUSTOM MERCHANDISE</span>, <span>CREATIVE DIRECTION</span>,
-            and <span>MUSIC SUPERVISION</span>.
-          </p>
-        </div>
+        <Services setInvertLogo={setInvertLogo} />
         <div className="linksContainer">
           <a
             className="socialLink"

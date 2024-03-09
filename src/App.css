@@ -46,27 +46,23 @@
   row-gap: 20vh;
 }
 
-.missionContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 35vw;
-}
+/* .logo:hover {
+  filter: invert(47%) sepia(9%) saturate(4478%) hue-rotate(317deg)
+    brightness(73%) contrast(81%);
+} */
 
-.missionContainer p {
-  font-size: 2.5vh;
-  font-family: 'Schibsted Grotesk', sans-serif;
-}
-
-.missionContainer span {
-  font-weight: 500;
+.logoContainer {
+  z-index: 9999;
 }
 
 .logo {
   max-width: 25vw;
   max-height: 25vh;
   object-fit: contain;
+}
+
+.logo.show {
+  filter: invert(100%);
 }
 
 .linksContainer {
@@ -76,6 +72,7 @@
   text-align: center;
   width: 100%;
   max-width: 50vw;
+  z-index: 2;
 }
 
 .linksContainer a {

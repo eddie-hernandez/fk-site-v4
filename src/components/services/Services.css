@@ -1,26 +1,4 @@
-.clickable#services:hover {
-  cursor: pointer;
-  color: #cf5854;
-}
 
-.servicesContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 40vw;
-  text-align: center;
-}
-
-.servicesContainer p {
-  font-size: 2.5vh;
-  font-family: "Noto Serif JP", serif;
-  z-index: 2;
-}
-
-.servicesContainer span {
-  font-weight: 600;
-}
 
 .hoverimg {
   display: none;
@@ -30,25 +8,6 @@
   display: block;
 }
 
-.hoverimg#merch1.show {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 50%;
-  height: 100%;
-  z-index: 1;
-}
-
-.hoverimg#merch2.show {
-  position: fixed;
-  top: 0%;
-  right: 0%;
-  width: 50%;
-  height: 107%;
-  z-index: 1;
-  margin-top: -4vh;
-}
-
 .hoverimg#merchflipbook.show {
   position: fixed;
   top: 3%;
@@ -56,48 +15,6 @@
   width: 50vh;
   height: 50vh;
   z-index: 1;
-}
-
-.hoverimg#cd1.show {
-  position: fixed;
-  top: 10%;
-  right: 15%;
-  width: 40vh;
-  height: 40vh;
-}
-
-.hoverimg#cd2.show {
-  position: fixed;
-  top: 5%;
-  left: 15%;
-  width: 40vh;
-  height: 40vh;
-}
-
-.hoverimg#cd3.show {
-  position: fixed;
-  bottom: 5%;
-  left: 30%;
-  width: 30vh;
-  height: 30vh;
-  z-index: 3;
-}
-
-.hoverimg#cd4.show {
-  position: fixed;
-  bottom: 5%;
-  right: 30%;
-  width: 30vh;
-  height: 30vh;
-  z-index: 3;
-}
-
-.hoverimg#cd5.show {
-  position: fixed;
-  bottom: 10%;
-  left: 2%;
-  width: 40vh;
-  height: 40vh;
 }
 
 .cdvidContainer {
@@ -117,30 +34,6 @@
   height: 100%;
 }
 
-.hoverimg#ms1.show {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  width: 50vh;
-  height: 40vh;
-}
-
-.hoverimg#ms2.show {
-  position: fixed;
-  top: 5%;
-  right: 5%;
-  width: 50vh;
-  height: 40vh;
-}
-
-.hoverimg#ms3.show {
-  position: fixed;
-  bottom: 10%;
-  left: 5%;
-  width: 50vh;
-  height: 40vh;
-}
-
 .hoverimg#msvid.show {
   position: fixed;
   /* bottom: 20%;
@@ -152,96 +45,44 @@
   z-index: 1;
 }
 
-.playlistContainer {
-  display: none;
-}
-
-.playlistContainer.show {
-  display: inline-block;
-  position: fixed;
-  bottom: 10%;
-  right: 5%;
-  width: 50vh;
-  max-height: 40vh;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.aspectRatioKeeper {
-  position: relative;
-  width: 100%;
-  height: 40vh;
-}
-
-.playlist {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.hoverimg#more1.show {
-  position: fixed;
-  bottom: 10%;
-  left: 10%;
-  width: 30vh;
-  height: 40vh;
-  z-index: 2;
-}
-
-.hoverimg#more2.show {
-  position: fixed;
-  top: 20%;
-  left: 20%;
-  width: 30vh;
-  height: 40vh;
-}
-
-.hoverimg#more3.show {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  width: 30vh;
-  height: 40vh;
-}
-
-.hoverimg#more4.show {
-  position: fixed;
-  top: 40%;
-  right: 25%;
-  width: 30vh;
-  height: 30vh;
-}
-
-.hoverimg#more5.show {
-  position: fixed;
-  top: 8%;
-  right: 12%;
-  width: 30vh;
-  height: 40vh;
-}
-
-.hoverimg#more6.show {
-  position: fixed;
-  bottom: 5%;
-  right: 45%;
-  width: 25vh;
-  height: 30vh;
-}
-
-.hoverimg#more7.show {
-  position: fixed;
-  bottom: 10%;
-  right: 4%;
-  width: 35vh;
-  height: 40vh;
-}
-
 .hoverimg#morevid.show {
   position: fixed;
   top: 5%;
   right: 39%;
   width: 45vh;
   height: 45vh;
+}
+
+@media screen and (max-width: 1400px) and (orientation: portrait) {
+  .servicesContainer {
+    max-width: 75vw;
+  }
+  .servicesContainer p {
+    font-size: 2vh;
+  }
+  .hoverimg#merchflipbook.show, .cdvidContainer, .hoverimg#msvid.show, .hoverimg#morevid.show {
+    max-width: 80vw;
+    max-height: 80vw;
+    width: auto;
+    height: auto;
+    top: 8%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 1400px) and (orientation: landscape) {
+  .servicesContainer p {
+    font-size: 3.5vh;
+  }
+  .servicesContainer {
+    max-width: 50vw;
+  }
+  .hoverimg#merchflipbook.show, .cdvidContainer, .hoverimg#msvid.show, .hoverimg#morevid.show {
+    top: 7%;
+    right: 39.5%;
+    max-width: 45vh;
+    max-height: 45vh;
+    width: auto;
+    height: auto;
+  }
 }

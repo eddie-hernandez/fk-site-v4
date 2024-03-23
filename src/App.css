@@ -50,7 +50,9 @@
   height: 40vh;
 }
 
-.hoverimg {
+.hoverimg#merchflipbook,
+.hoverimg#fklogo,
+.hoverimg#consvid {
   display: none;
   position: absolute;
   top: 0;
@@ -60,7 +62,9 @@
   object-fit: cover;
 }
 
-.hoverimg.show {
+.hoverimg#merchflipbook.show,
+.hoverimg#fklogo.show,
+.hoverimg#consvid.show {
   display: block;
 }
 
@@ -68,6 +72,23 @@
 
 .missionContainer {
   max-width: 40vw;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5vh;
+}
+
+.missionList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: disc;
+  font-size: 2.5vh;
+  font-family: 'Noto Serif JP', serif;
+  text-align: left;
 }
 
 .clickable#services:hover {
@@ -81,6 +102,10 @@
   z-index: 2;
 }
 
+.missionContainer.invertText li {
+  color: white;
+}
+
 .missionContainer span {
   font-weight: 600;
 }
@@ -91,6 +116,8 @@
   align-items: center;
   text-align: center;
   width: 100%;
+  height: 10vh;
+  max-height: 25vh;
   max-width: 50vw;
   z-index: 2;
 }
@@ -117,9 +144,38 @@
   color: black;
 }
 
+.cdIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.socialLogo {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .socialLogo svg {
   font-size: 7vh;
 }
+
+.socialLogo img {
+  position: fixed;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.socialLogo#cdIcon1 img {
+  max-height: 20%;
+  max-width: 20%;
+}
+
+.socialLogo#cdIcon2 img {
+  max-height: 25%;
+  max-width: 25%;
+}
+
 
 /* smaller mobile devices (smartphones) */
 @media screen and (max-width: 1400px) and (orientation: portrait) {
@@ -144,6 +200,11 @@
   .missionContainer {
     max-width: 75vw;
   }
+
+  .missionContainer.invertText li {
+    color: black;
+  }
+  
 
   .linksContainer {
     max-width: 90vw;
@@ -179,6 +240,10 @@
 
   .missionContainer p {
     font-size: 3.5vh;
+  }
+
+  .missionContainer.invertText li {
+    color: black;
   }
 
   .linksContainer a {

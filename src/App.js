@@ -128,7 +128,7 @@ export default function App() {
                   setInvertLogo(false)
                 }}
               >
-                <i>CUSTOM MERCHANDISE</i>
+                CUSTOM MERCHANDISE
               </span>
             </li>
             {/* Consultation */}
@@ -142,7 +142,7 @@ export default function App() {
                   setInvertLogo(false)
                 }}
               >
-                <i>CONSULTATION</i>
+                CONSULTATION
               </span>
             </li>
             {/* Creative Direction */}
@@ -157,7 +157,7 @@ export default function App() {
                   setShowPlaylistHoverBox(true)
                 }}
               >
-                <i>CREATIVE DIRECTION</i>
+                CREATIVE DIRECTION
               </span>
             </li>
             {/* Brand Strategy */}
@@ -171,7 +171,7 @@ export default function App() {
                   setInvertLogo(false)
                 }}
               >
-                <i>BRAND STRATEGY</i>
+                BRAND STRATEGY
               </span>
             </li>
           </ol>

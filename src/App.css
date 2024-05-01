@@ -84,10 +84,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   list-style-type: disc;
   font-size: 2.5vh;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Inter Tight', sans-serif;
   text-align: left;
 }
 
@@ -97,8 +97,10 @@
 }
 
 .missionContainer p {
-  font-size: 2.5vh;
-  font-family: 'Noto Serif JP', serif;
+  font-size: 4vh;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  line-height: 1;
   z-index: 2;
 }
 
@@ -107,7 +109,8 @@
 }
 
 .missionContainer span {
-  font-weight: 600;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .linksContainer {
@@ -176,7 +179,6 @@
   max-width: 25%;
 }
 
-
 /* smaller mobile devices (smartphones) */
 @media screen and (max-width: 1400px) and (orientation: portrait) {
   .servicesContainer {
@@ -194,7 +196,7 @@
   }
 
   .missionContainer p {
-    font-size: 1.75vh;
+    font-size: 3.5vh;
   }
 
   .missionContainer {
@@ -204,7 +206,6 @@
   .missionContainer.invertText li {
     color: black;
   }
-  
 
   .linksContainer {
     max-width: 90vw;

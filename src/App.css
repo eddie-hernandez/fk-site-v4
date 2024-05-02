@@ -181,6 +181,10 @@
 
 /* smaller mobile devices (smartphones) */
 @media screen and (max-width: 1400px) and (orientation: portrait) {
+  .app {
+    height: 90vh;
+  }
+
   .servicesContainer {
     height: 30vh;
     width: 30vh;

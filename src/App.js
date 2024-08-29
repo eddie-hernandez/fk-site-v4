@@ -114,7 +114,7 @@ export default function App() {
           <p>
             Creative collective based in NYC/LA/DA.
             <br />
-            Services we offer:
+            Consultation services we offer:
           </p>
           <ol className="missionList">
             {/* Custom Merchandise */}

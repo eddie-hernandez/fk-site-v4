@@ -71,7 +71,7 @@
 /* MISSION CONTAINER */
 
 .missionContainer {
-  max-width: 40vw;
+  max-width: 50vw;
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -96,10 +96,16 @@
   color: #cf5854;
 }
 
+.missionStatement {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+
 .missionContainer p {
   font-size: 4vh;
   font-family: 'Inter Tight', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   z-index: 2;
 }
@@ -109,7 +115,7 @@
 }
 
 .missionContainer span {
-  font-weight: 700;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -200,11 +206,15 @@
   }
 
   .missionContainer p {
-    font-size: 3.5vh;
+    font-size: 2.5vh;
   }
 
   .missionContainer {
-    max-width: 75vw;
+    max-width: 80vw;
+  }
+
+  .missionList {
+    font-size: 2vh;
   }
 
   .missionContainer.invertText li {

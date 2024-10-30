@@ -111,11 +111,14 @@ export default function App() {
             showBrandStrategy ? 'invertText' : ''
           }`}
         >
-          <p>
-            Creative collective based in NYC/LA/DA.
-            <br />
-            Services we offer:
-          </p>
+          <div className='missionStatement'>
+            <p>
+              A brand, design, and creative production studio that creates
+              custom campaigns and high quality products for our favorite
+              artists, brands, clubs and IP.
+            </p>
+            <p>Services we offer:</p>
+          </div>
           <ol className="missionList">
             {/* Custom Merchandise */}
             <li>
